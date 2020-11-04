@@ -1,0 +1,155 @@
+body{
+	height: 100vh;
+	margin: 0px;
+	
+}
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: static;
+	
+
+}
+.checker-container{
+	background-color: red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 10px solid black;
+	height: 38rem;
+	width: 38rem;
+}
+
+.checker-outline{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid black;
+	width: 97%;
+	height: 97%;
+}
+.checker-board{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-left: 2px solid orange;
+	border-right: 2px solid orange;
+	border-top: 2px solid orange;
+	border-bottom: 2px solid orange;
+	width: 97%;
+	height: 97%;
+}
+.checker-rows-even, .checker-rows-odd{
+	display: flex;
+	flex-direction: row;
+	
+	width: 100%;
+	height: 100%;
+
+}
+.checker-cell{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid orange;
+	width: 100%;
+
+	color: white;
+
+}
+.red{
+	background-color: red;
+}
+.black{
+	background-color: black;
+}
+.checker{
+	
+	border-radius: 50%;
+	padding: 1.5rem;
+}
+.red-king{
+	background-image: url(img/red_checker_king.png) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.black-king {
+	background-image: url(img/black_checker_king.png) !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.red-checker{
+	background-image: url(img/red_checker.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.black-checker{
+	background-image: url(img/black_checker.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+@keyframes move {
+	from{
+		background-color: :red;
+	}
+	to{
+		background-color: yellow;
+	}
+}
+.move-checker{
+	animation-name: move;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+
+}
+@keyframes double {
+	from{
+		background-color: :black;
+	}
+	to{
+		background-color: green;
+	}
+}
+.move-double{
+	animation-name: double;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+
+}
+
+
+.score-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 10rem;
+	margin: 5rem;
+
+
+}
+.score-board{
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	width: auto;
+
+
+}
+h3{
+	margin: 0px;
+}
+.score{
+	margin-bottom: 10px;
+}
+.reset_button{
+	margin-top: 10px;
+	height: 1.5rem;
+	width: 7rem;
+}
