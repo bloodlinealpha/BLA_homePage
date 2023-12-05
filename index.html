@@ -20,45 +20,59 @@
 	<header>
 		<nav class="navbar fixed-top navbar-dark bg-dark">
 		  <a class="navbar-brand" href="#">
-		    <img id="logo" src="img/Alpha2023-2.png" width="50" height="50" class="d-inline-block align-top w-back" alt="" loading="lazy">
+		    <img id="logo" src="img/Alpha2023-2.png" width="50" height="50" class="d-inline-block align-top w-back" alt="BLA" loading="lazy">
 		    BloodLineAlpha Development
 		  </a>
 		</nav>
 	</header>
 	<div class="container-md second-container">
 		<div class="flex-card" id="checkers">
-			<div class="card text-center">
+			<div class="card text-center hover-card">
 				<div class="card-body">
 					<h3 class="card-title">Checkers</h3>
 					<p class="card-text">Click below to play checkers!</p>
-					<a id="play_checkers" href="checkers/checkers_2.html" class="btn btn-primary">Play</a>
+					<a id="play_checkers" href="checkers/checkers_2.html" target="_blank" class="btn btn-primary">Play</a>
 				</div>
 			</div>
 		</div>
 		<div class="flex-card" id="AI-Doc-Navigator">
-			<div class="card text-center">
+			<div class="card text-center hover-card">
 				<div class="card-body">
 					<h3 class="card-title">AI Doc Navigator</h3>
 					<p class="card-text">Click the link to use the GPT</p>
-					<a id="gpt-link" href="https://chat.openai.com/g/g-Yhux0PqZA-ai-doc-navigator" class="btn btn-primary">GPT</a>
+					<a id="gpt-link" href="https://chat.openai.com/g/g-Yhux0PqZA-ai-doc-navigator" target="_blank" class="btn btn-primary">GPT</a>
 				</div>
 			</div>
 		</div>
 		<div class="flex-card" id="gitbook_blogeaai">
-			<div class="card text-center">
+			<div class="card text-center hover-card">
 				<div class="card-body">
 					<h3 class="card-title">BlogeaAi Docs</h3>
 					<p class="card-text">Click the link to see the docs for BlogeaAI. </p>
-					<a id="gpt-link" href="https://docs.blogeaai.com/" class="btn btn-primary">BlogeaAi Docs</a>
+					<a id="gpt-link" href="https://docs.blogeaai.com/" target="_blank" class="btn btn-primary">BlogeaAi Docs</a>
 				</div>
 			</div>
 		</div>
 		<div class="flex-card" id="gitbook_docs">
-			<div class="card text-center">
+			<div class="card text-center hover-card">
 				<div class="card-body">
 					<h3 class="card-title">GitBook Docs</h3>
 					<p class="card-text">Click to learn more about GitBook</p>
-					<a id="gpt-link" href="https://docs.gitbook.com/" class="btn btn-primary">GitBook Docs</a>
+					<a id="gitbook-link" href="https://docs.gitbook.com/" target="_blank" class="btn btn-primary">GitBook Docs</a>
+				</div>
+			</div>
+		</div>
+		<div class="flex-card" id="NHL_GPT">
+			<div class="card text-center hover-card">
+				<div class="card-body">
+					<h3 class="card-title">NHL GPT</h3>
+					<p class="card-text">Click to use the Hockey Stats and Analysis Expert GPT </p>
+					<div>
+						<a id="nhl_gpt_link" href="https://chat.openai.com/g/g-h1JcfZzg8-hockey-stats-and-analysis-expert" target="_blank" class="btn btn-primary">The Hockey Stats and Analysis Expert</a>
+					</div>
+					<div>
+						<a id="nhl_gpt_github_link" href="https://github.com/bloodlinealpha/NHL-Stats-and-Analysis-Expert" target="_blank" class="btn btn-secondary mt-2">GitHub Repo</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -67,9 +81,20 @@
 <footer class="page-footer font-small">
 
 	<!-- Copyright -->
-	<div class="footer-copyright text-center py-3">2023 Copyright:
-	<a href="https://bloodlinealpha.com/"> BloodLineAlpha Development</a>
+	<div class="footer-copyright text-center py-3">
+		<div>
+			<a id="github-link" href="https://github.com/bloodlinealpha/" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+					<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+				</svg>
+			</a>
+		</div>
+		<div>2023 Copyright:
+			<a href="https://bloodlinealpha.com/"> BloodLineAlpha Development</a>
+		</div>
+		
 	</div>
+	
 	<!-- Copyright -->
 
 </footer>
