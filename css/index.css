@@ -53,18 +53,18 @@ body{
 	width: 100%;
 }
 .flex-card{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	color: black;
-	
+	width: 18rem;	
 }
 
 .card {
 	width: auto;
 	margin-bottom: 50px;
 	background-size: contain;
+	border-radius: 10px; /* Rounded corners */
+	overflow: hidden; /* Hide scrollbars */
+	background-color: white;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 	
 }
 
@@ -72,10 +72,20 @@ body{
 	transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
   
-  .hover-card:hover {
+.hover-card:hover {
 	box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
 	transform: translateY(-8px);
-  }
+	transform: scale(1.1);
+	z-index: 100;
+}
+
+.card-body{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
 
 .page-footer{
 	background-color: black;
