@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+const {
+  title = "BloodLineAlpha Development - Automate Workflows with AI",
+  description = "BloodLineAlpha Development helps businesses streamline operations with AI-assisted automation, custom dashboards, SaaS MVPs, and reliable VPS deployments. From idea to deployment, we design, build, and deliver solutions that save time and reduce costs.",
+  keywords = "AI automation, workflow automation, dashboards, SaaS development, full stack developer, VPS deployment, contract developer, custom software, Astro, React, Node, Docker"
+} = Astro.props;
+---
+<html lang="en" class="antialiased">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <meta name="theme-color" content="#0a0c10">
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#0a0c10] text-slate-200 overflow-x-hidden">
+    <div style="max-width: 100vw; overflow-x: hidden;">
+      <slot />
+    </div>
+  </body>
+</html>

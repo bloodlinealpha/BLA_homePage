@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import HeaderHero from '../components/HeaderHero.tsx'
+import ServicesSection from '../components/ServicesSection.tsx'
+import ProjectsSection from '../components/ProjectsSection.tsx'
+import AboutContactSection from '../components/AboutContactSection.tsx'
+import SiteFooter from '../components/SiteFooter.tsx'
+import EmailModalController from '../components/EmailModalController.tsx'
+---
+<BaseLayout title="BloodLineAlpha Development">
+  <HeaderHero />
+  <!-- Close the mobile header items global script -->
+  <script is:inline>
+    document.addEventListener('click', (e) => {
+      const link = e.target.closest('a[data-close-menu]');
+      if (!link) return;
+      const menu = document.getElementById('mobile-menu');
+      if (menu && menu.hasAttribute('open')) menu.removeAttribute('open');
+    });
+  </script>
+  <ServicesSection />
+  <ProjectsSection />
+  <AboutContactSection />
+  <SiteFooter />
+  <EmailModalController client:load />
+</BaseLayout>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bloodlinealpha.com/sitemap-index.xml
